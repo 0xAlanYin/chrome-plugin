@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页摘要助手</title>
+  <meta charset="utf-8">
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      background-color: #e6ffe6; /* 淡绿色背景 */
+      width: 300px;
+      margin: 0 auto;
+    }
+    #summary { 
+      white-space: pre-wrap; 
+      font-size: 18px; /* 默认字体大小 */
+      margin-top: 20px;
+    }
+    #fontSizeControl {
+      margin-bottom: 15px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    #summarizeButton {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50; /* 绿色 */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    #summarizeButton:hover {
+      background-color: #45a049; /* 深绿色 */
+    }
+  </style>
+</head>
+<body>
+  <div id="fontSizeControl">
+    <label for="fontSize">字体大小: </label>
+    <input type="range" id="fontSize" min="12" max="24" value="18">
+    <span id="fontSizeValue">18</span>px
+  </div>
+  <button id="summarizeButton">Summary</button>
+  <div id="summary"></div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
